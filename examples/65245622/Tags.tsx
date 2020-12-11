@@ -1,5 +1,5 @@
-import { useHistory } from "react-router-dom";
-import React from "react";
+import { useHistory } from 'react-router-dom';
+import React from 'react';
 
 export default function Tags() {
   const history = useHistory();
@@ -11,8 +11,8 @@ export default function Tags() {
   return (
     <>
       <ul aria-label="contacts">
-        <li id="backend" onClick={() => isSelected("backend")}></li>
-        <li id="frontend" onClick={() => isSelected("frontend")}></li>
+        <li id="backend" onClick={() => isSelected('backend')}></li>
+        <li id="frontend" onClick={() => isSelected('frontend')}></li>
       </ul>
     </>
   );
