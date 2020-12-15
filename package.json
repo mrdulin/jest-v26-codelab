@@ -9,6 +9,8 @@
   "author": "mrdulin <novaline.dulin@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
     "@types/enzyme": "^3.10.8",
     "@types/jest": "^26.0.18",
     "@types/node-fetch": "^2.5.7",
