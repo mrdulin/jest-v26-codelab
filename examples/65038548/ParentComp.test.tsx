@@ -23,7 +23,7 @@ describe('65038548', () => {
   afterAll(() => {
     jest.resetAllMocks();
   });
-  it('should pass', () => {
+  it('should open the modal', () => {
     const { getByTestId } = render(<ParentComp></ParentComp>);
     const openModalButton = getByTestId('open-modal-button');
 
@@ -31,5 +31,18 @@ describe('65038548', () => {
     const myModal = getByTestId('my-modal');
 
     expect(myModal).toBeDefined();
+  });
+
+  it('should close the modal', () => {
+    const { getByTestId, queryByText } = render(<ParentComp></ParentComp>);
+    const openModalButton = getByTestId('open-modal-button');
+    fireEvent.click(openModalButton);
+
+    const closeModalButton = getByTestId('my-modal');
+    expect(closeModalButton).toBeDefined();
+
+    fireEvent.click(closeModalButton);
+
+    expect(queryByText('This is a mocked modal')).toBeNull();
   });
 });
