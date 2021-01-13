@@ -1,0 +1,12 @@
+{
+    "list": [
+        {
+            "id": 1,
+            "value": "first"
+        },
+        {
+            "id": 2,
+            "value": "second"
+        }
+    ]
+}
