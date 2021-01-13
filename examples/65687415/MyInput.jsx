@@ -5,7 +5,7 @@ const MyInput = ({ value, list, id, onChange }) => {
     <label>
       <strong>{id}</strong>
       <div>
-        <input type="text" value={value} onChange={onChange} list={id} />
+        <input type="text" value={value} onChange={onChange} data-testid="test" list={id} />
         <datalist id={id} aria-label="datalist-items">
           {list.map((item) => (
             <option key={`item-${item.id}`} aria-label="data-list-item" value={item.value} />

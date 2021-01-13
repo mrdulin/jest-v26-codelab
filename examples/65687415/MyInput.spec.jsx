@@ -15,7 +15,7 @@ describe('MyInput', () => {
     });
     const list = [...data.list];
     const screen = render(<MyInput onChange={onChange} list={list} id="test" />);
-    userEvent.type(screen.getByLabelText('datalist-items'), 'first');
+    userEvent.type(screen.getByTestId('test'), 'first');
     expect(onChange).toBeCalledTimes(5);
     events.forEach((e) => {
       expect(onChange).toHaveBeenCalledWith(e);
