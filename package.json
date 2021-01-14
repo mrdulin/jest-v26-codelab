@@ -25,6 +25,7 @@
     "@types/redux-mock-store": "^1.0.2",
     "@types/rewire": "^2.5.28",
     "@types/sinon": "^9.0.10",
+    "@types/styled-components": "^5.1.7",
     "axios-mock-adapter": "^1.19.0",
     "chai": "^4.2.0",
     "enzyme": "^3.11.0",
@@ -41,9 +42,9 @@
     "typescript": "^4.1.2"
   },
   "dependencies": {
-    "analytics-node": "^3.4.0-beta.3",
+    "analytics-node": "^3.5.0",
     "apollo-datasource-rest": "^0.9.5",
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "csvtojson": "^2.0.10",
     "express": "^4.17.1",
     "firebase-admin": "^9.4.2",
@@ -54,7 +55,8 @@
     "react-dom": "^16.14.0",
     "react-router-dom": "^5.2.0",
     "redux-thunk": "^2.3.0",
-    "rxjs": "^6.6.3"
+    "rxjs": "^6.6.3",
+    "styled-components": "^5.2.1"
   },
   "prettier": {
     "singleQuote": true,
