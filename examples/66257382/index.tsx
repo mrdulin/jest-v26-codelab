@@ -1,21 +1,21 @@
 import React from 'react';
-import { Dispatch, Action } from 'redux';
+import { Dispatch, Action, AnyAction } from 'redux';
 import { connect } from 'react-redux';
 
 const INCREMENT = 'INCREMENT';
 const DECREMENT = 'DECREMENT';
 
-interface Props<A> {
+interface Props<A extends Action = AnyAction> {
   count: number;
   asd: number;
-  dispatch: Dispatch<Action<A>>;
+  dispatch: Dispatch<A>;
 }
 
-class Counter extends React.Component<Props<any>> {
+class Counter extends React.Component<Props> {
   state = { count: 0 };
 
   increment = () => {
-    this.props.dispatch({ type: INCREMENT });
+    this.props.dispatch<{ type: typeof INCREMENT }>({ type: INCREMENT });
   };
 
   decrement = () => {
