@@ -10,6 +10,7 @@ class Test extends React.Component<{ onChange?: (e: ChangeEvent<HTMLInputElement
 
 describe('react-cloneElement-enzyme-change-event', () => {
   it('should handle change event', () => {
+    const logSpy = jest.spyOn(console, 'log');
     const onChange = jest.fn();
     const wrapper = mount(
       <MyComponent>
@@ -18,10 +19,10 @@ describe('react-cloneElement-enzyme-change-event', () => {
       </MyComponent>
     );
     const input = wrapper.find('div').children().at(0).find('input');
-    // expect(jest.isMockFunction(input.prop('onChange'))).toBeTruthy(); // failed
+    expect(jest.isMockFunction(input.prop('onChange'))).toBeFalsy();
     const event = {} as ChangeEvent<HTMLInputElement>;
-    input.simulate('change', event);
-    expect(onChange).toBeCalled();
+    input.invoke('onChange')!(event);
     expect(onChange).toBeCalledWith({});
+    expect(logSpy).toBeCalledWith('handle change event');
   });
 });
