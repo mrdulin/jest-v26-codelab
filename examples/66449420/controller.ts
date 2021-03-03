@@ -1,5 +1,5 @@
 import * as Services from './services';
-import { Request, Response } from 'express';
+import type { Request, Response } from 'express';
 
 export async function GetCountriesList(req: Request, res: Response): Promise<void> {
   const response = await Services.GetCountriesList();
