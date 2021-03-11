@@ -1,5 +1,6 @@
 module.exports = {
   preset: 'ts-jest/presets/js-with-ts',
+  // comment when use react-testing-library, otherwise will get "TypeError: MutationObserver is not a constructor"
   testEnvironment: 'enzyme',
   setupFilesAfterEnv: [
     'jest-enzyme',
