@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test home page should render home page successfully 1`] = `
+<ul
+  className="plugin-list"
+>
+  <li
+    appearance="subtle"
+    className="item"
+    onClick={[Function]}
+    weight="medium"
+  >
+    Plugins
+  </li>
+  <li
+    className="up-coming-text"
+    key="0"
+  >
+    Apps (Coming soon)
+  </li>
+</ul>
+`;
