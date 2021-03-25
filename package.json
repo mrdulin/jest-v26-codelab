@@ -75,6 +75,7 @@
     "react-router-dom": "^5.2.0",
     "redux-thunk": "^2.3.0",
     "rxjs": "^6.6.3",
+    "shopify-api-node": "^3.6.5",
     "styled-components": "^5.2.1"
   },
   "prettier": {
