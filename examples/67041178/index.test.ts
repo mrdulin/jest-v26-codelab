@@ -20,4 +20,15 @@ describe('67041178', () => {
     const { feature } = require('./');
     expect(feature).toEqual(['exp is disable']);
   });
+
+  it('should pass', () => {
+    Object.defineProperty(global, 'window', {
+      value: {
+        app: { initialAppProps: { exp: { my_feature: true } } },
+      },
+      writable: true,
+    });
+    const { feature } = require('./');
+    expect(feature).toEqual(['exp is enabled']);
+  });
 });
