@@ -1,6 +1,5 @@
-import { AnyAction, configureStore, ConfigureStoreOptions, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { configureStore, createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
-import { ThunkMiddleware } from 'redux-thunk';
 
 interface fetchUserResponse {
   name: string;
@@ -29,15 +28,18 @@ interface AppState {
   user: UserState;
 }
 
-const storeConfig: ConfigureStoreOptions<AppState, AnyAction, [ThunkMiddleware<AppState, AnyAction>]> = {
+const storeConfig = {
   reducer: {
     user: usersSlice.reducer,
   },
+  middleware(getDefaultMiddlewares) {
+    if (process.env.NODE_ENV !== 'production') {
+      return getDefaultMiddlewares().concat(logger);
+    } else {
+      return getDefaultMiddlewares();
+    }
+  },
 };
-
-if (process.env.NODE_ENV !== 'production') {
-  storeConfig.middleware = (getDefaultMiddlewares) => getDefaultMiddlewares().concat(logger);
-}
 
 const store = configureStore(storeConfig);
 
