@@ -28,7 +28,20 @@ interface AppState {
   user: UserState;
 }
 
-const storeConfig = {
+// const storeConfig = {
+//   reducer: {
+//     user: usersSlice.reducer,
+//   },
+//   middleware(getDefaultMiddlewares) {
+//     if (process.env.NODE_ENV !== 'production') {
+//       return getDefaultMiddlewares().concat(logger);
+//     } else {
+//       return getDefaultMiddlewares();
+//     }
+//   },
+// };
+
+const store = configureStore({
   reducer: {
     user: usersSlice.reducer,
   },
@@ -39,8 +52,6 @@ const storeConfig = {
       return getDefaultMiddlewares();
     }
   },
-};
-
-const store = configureStore(storeConfig);
+});
 
 store.dispatch(fetchUser());
