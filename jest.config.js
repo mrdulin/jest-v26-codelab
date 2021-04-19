@@ -8,6 +8,6 @@ module.exports = {
   ],
   setupFiles: ['./jest.setup.js'],
   testEnvironmentOptions: {
-    enzymeAdapter: 'react16',
+    // enzymeAdapter: 'react16',
   },
 };
