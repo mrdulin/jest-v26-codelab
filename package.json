@@ -54,6 +54,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.5.0",
     "@slack/web-api": "^6.1.0",
+    "abortcontroller-polyfill": "^1.7.1",
     "analytics-node": "^3.5.0",
     "apollo-datasource-rest": "^0.9.5",
     "aws-sdk": "^2.875.0",
