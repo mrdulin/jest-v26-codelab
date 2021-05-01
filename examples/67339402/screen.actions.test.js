@@ -18,5 +18,6 @@ describe('67339402', () => {
     const store = mockStore({});
     await store.dispatch(actions.loadScreen());
     expect(window.location).toEqual('www.google.com');
+    console.log(window.location.href); // top property on window is Unforgeable
   });
 });
