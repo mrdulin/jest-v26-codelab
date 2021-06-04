@@ -89,7 +89,8 @@
     "request": "^2.88.2",
     "rxjs": "^6.6.3",
     "shopify-api-node": "^3.6.5",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "yargs": "^17.0.1"
   },
   "prettier": {
     "singleQuote": true,
