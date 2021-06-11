@@ -9,11 +9,11 @@ export default function App() {
       setUrlChanged(true);
     }
   };
-  useEffect(() => {
-    if (window.location.search.length !== 0) {
-      setUrlChanged(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (window.location.search.length !== 0) {
+  //     setUrlChanged(true);
+  //   }
+  // }, []);
   return (
     <div>
       <button aria-label="change" onClick={handleURLSearchChange}>

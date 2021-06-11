@@ -13,8 +13,10 @@ describe('App', () => {
     });
     render(<App />);
     const button = await screen.findByLabelText('change');
+    let label = await screen.findByLabelText('URL Status');
+    await waitFor(() => expect(label).toHaveTextContent('Not yet'));
     userEvent.click(button);
-    const label = await screen.findByLabelText('URL Status');
+    label = await screen.findByLabelText('URL Status');
     await waitFor(() => expect(label).toHaveTextContent('Changed!'));
   });
 });
