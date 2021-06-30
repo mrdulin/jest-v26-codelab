@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Learning jestjs v26.x.x testing framework by examples",
   "scripts": {
-    "test": "jest",
-    "commit-msg": "npx --no-install commitlint --edit '$1'"
+    "test": "jest"
   },
   "keywords": [],
   "author": "mrdulin <novaline.dulin@gmail.com>",
@@ -106,8 +105,5 @@
     "singleQuote": true,
     "printWidth": 120,
     "tabWidth": 2
-  },
-  "husky": {
-    "pre-commit": "npm run commit-msg"
   }
 }
