@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { mount } from 'enzyme';
 
 jest.mock('./Elements', () => ({
   SortIndicator: (props) => <div {...props}>mocked SortIndicator</div>,
@@ -9,7 +9,7 @@ jest.mock('./Elements', () => ({
 describe('68279075', () => {
   it('should pass', async () => {
     const MainContainer = (await import('./main')).default;
-    const wrapper = shallow(<MainContainer />);
+    const wrapper = mount(<MainContainer />);
     console.log(wrapper.debug());
   });
 });
