@@ -1,7 +1,7 @@
-import { render } from '@testing-library/react';
 import React, { useRef } from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import { mocked } from 'ts-jest/utils';
-import App from './';
+import App from './App';
 
 jest.mock('react', () => {
   return {
@@ -12,19 +12,17 @@ jest.mock('react', () => {
 
 const useMockRef = mocked(useRef);
 
-describe('66332902', () => {
-  afterEach(() => {
-    jest.clearAllMocks();
-  });
+describe('63702104', () => {
   afterAll(() => {
     jest.resetAllMocks();
   });
-  test('should mock ref and offsetWidth', () => {
+  test('should pass', () => {
     const ref = { current: {} };
+    const mScrollBy = jest.fn();
     Object.defineProperty(ref, 'current', {
       set(_current) {
         if (_current) {
-          jest.spyOn(_current, 'offsetWidth', 'get').mockReturnValueOnce(100);
+          _current.scrollBy = mScrollBy;
         }
         this._current = _current;
       },
@@ -34,5 +32,7 @@ describe('66332902', () => {
     });
     useMockRef.mockReturnValueOnce(ref);
     render(<App />);
+    fireEvent.click(screen.getByText(/click/i));
+    expect(mScrollBy).toBeCalledWith({ top: 0, left: 100 });
   });
 });
