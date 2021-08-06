@@ -88,6 +88,7 @@
     "mongodb": "^3.6.5",
     "mongoose": "^5.12.7",
     "multer": "^1.4.2",
+    "next": "^11.0.1",
     "node-fetch": "^2.6.1",
     "pubsub-js": "^1.9.3",
     "react": "^16.14.0",
