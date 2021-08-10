@@ -82,6 +82,7 @@
     "isomorphic-unfetch": "^3.1.0",
     "jayson": "^3.4.4",
     "jsonwebtoken": "^8.5.1",
+    "knex": "^0.21.21",
     "lodash.memoize": "^4.1.2",
     "mobx": "^6.1.8",
     "moment": "^2.29.1",
