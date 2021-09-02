@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`69027456 Should render correctly - 2 1`] = `
+<main>
+  my component
+</main>
+`;
+
+exports[`69027456 Should render correctly 1`] = `
+<div>
+  <main>
+    my component
+  </main>
+</div>
+`;
