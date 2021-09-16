@@ -10,6 +10,10 @@ module.exports = {
     //   // '/Users/dulin/workspace/github.com/mrdulin/jest-v26-codelab/examples/66341555/axios.mock.js',
   ],
   setupFiles: ['./jest.setup.js'],
+  reporters: [
+    'default',
+    // ['<rootDir>/reporters/slow-test', { numTests: 3 }]
+  ],
   // testEnvironmentOptions: {
   //   enzymeAdapter: 'react16',
   // },
