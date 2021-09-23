@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Learning jestjs v26.x.x testing framework by examples",
   "scripts": {
-    "test": "jest",
-    "preinstall": "./check-registry.sh"
+    "test": "jest"
   },
   "keywords": [],
   "author": "mrdulin <novaline.dulin@gmail.com>",
