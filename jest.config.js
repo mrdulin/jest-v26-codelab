@@ -3,6 +3,7 @@ module.exports = {
   // timers: 'modern',
   // comment when use react-testing-library, otherwise will get "TypeError: MutationObserver is not a constructor"
   // testEnvironment: 'enzyme',
+  testEnvironment: 'jsdom',
   moduleNameMapper: {
     // '\\.(css|less|scss)$': '<rootDir>/examples/console-log-in-module-name-mapper-file/styleMock.js',
   },
