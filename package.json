@@ -4,7 +4,8 @@
   "description": "Learning jestjs v26.x.x testing framework by examples",
   "scripts": {
     "test:rtl": "jest --config jest.config.rtl.js",
-    "test:enzyme": "jest --config jest.config.enzyme.js"
+    "test:enzyme": "jest --config jest.config.enzyme.js",
+    "test": "jest"
   },
   "author": "mrdulin <novaline.dulin@gmail.com>",
   "license": "MIT",
