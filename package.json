@@ -80,6 +80,7 @@
     "csvtojson": "^2.0.10",
     "dayjs": "^1.10.5",
     "express": "^4.17.1",
+    "firebase": "^9.6.2",
     "firebase-admin": "^9.4.2",
     "ftp": "^0.3.10",
     "got": "^11.8.2",
