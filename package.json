@@ -5,6 +5,7 @@
   "scripts": {
     "test:rtl": "jest --config jest.config.rtl.js",
     "test:enzyme": "jest --config jest.config.enzyme.js",
+    "test:node": "jest --config jest.config.nodes.js",
     "test": "jest"
   },
   "author": "mrdulin <novaline.dulin@gmail.com>",
