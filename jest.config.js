@@ -3,4 +3,5 @@ module.exports = {
   transform: {
     '\\.[jt]sx?$': 'esbuild-jest',
   },
+  coverageProvider: 'v8',
 };
