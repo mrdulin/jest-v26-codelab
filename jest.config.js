@@ -4,4 +4,5 @@ module.exports = {
     '\\.[jt]sx?$': 'esbuild-jest',
   },
   coverageProvider: 'v8',
+  setupFilesAfterEnv: ['./jest.setup.js'],
 };
