@@ -107,6 +107,7 @@
     "pubsub-js": "^1.9.3",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
+    "react-dropzone": "^12.0.4",
     "react-query": "^3.34.7",
     "react-redux": "^7.2.2",
     "react-router-dom": "^5.2.0",
