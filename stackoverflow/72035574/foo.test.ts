@@ -6,8 +6,8 @@ class Foo {
 }
 
 describe('tests on class Foo', () => {
-  let spyOnBar;
-  let foo;
+  let spyOnBar: jest.SpyInstance;
+  let foo: InstanceType<typeof Foo>;
   beforeEach(() => {
     foo = new Foo();
     spyOnBar = jest.spyOn(foo, 'bar');
