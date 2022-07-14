@@ -6,6 +6,7 @@
     "test:rtl": "jest --config jest.config.rtl.js",
     "test:enzyme": "jest --config jest.config.enzyme.js",
     "test:node": "jest --config jest.config.node.js",
+    "test:rtl:esbuild": "jest --config jest.config.esbuild.js",
     "test": "jest"
   },
   "author": "mrdulin <novaline.dulin@gmail.com>",
