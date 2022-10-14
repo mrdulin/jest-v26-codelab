@@ -42,6 +42,7 @@
     "@types/soap": "^0.21.0",
     "@types/styled-components": "^5.1.7",
     "@types/supertest": "^2.0.11",
+    "@types/ws": "^8.5.3",
     "axios-mock-adapter": "^1.19.0",
     "chai": "^4.2.0",
     "enzyme": "^3.11.0",
@@ -134,6 +135,7 @@
     "styled-components": "^5.2.1",
     "swr": "^0.5.6",
     "uuidv4": "^6.2.13",
+    "ws": "^8.9.0",
     "xmlhttprequest": "^1.8.0",
     "yargs": "^17.0.1"
   },
