@@ -43,6 +43,7 @@
     "@types/soap": "^0.21.0",
     "@types/styled-components": "^5.1.7",
     "@types/supertest": "^2.0.11",
+    "@types/testing-library__jest-dom": "^5.14.5",
     "@types/ws": "^8.5.3",
     "axios-mock-adapter": "^1.19.0",
     "chai": "^4.2.0",
