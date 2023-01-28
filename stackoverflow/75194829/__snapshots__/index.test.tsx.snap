@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`75194829 should pass 1`] = `
+<ul>
+  <li>
+    apple
+    <ul>
+      <li>
+        a
+      </li>
+      <li>
+        b
+      </li>
+      <li>
+        c
+      </li>
+    </ul>
+  </li>
+  <li>
+    sony
+    <ul>
+      <li>
+        x
+      </li>
+      <li>
+        y
+      </li>
+      <li>
+        z
+      </li>
+    </ul>
+  </li>
+</ul>
+`;
