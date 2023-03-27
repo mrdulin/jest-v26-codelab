@@ -1,3 +1,8 @@
+// https://github.com/jsdom/whatwg-url/issues/209
+import { TextEncoder, TextDecoder } from 'util';
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
+
 jest.setTimeout(5 * 1000);
 
 // global.SVGRect = {};
