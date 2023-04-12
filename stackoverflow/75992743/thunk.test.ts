@@ -1,12 +1,16 @@
 import configureStore from 'redux-mock-store';
-import thunk from 'redux-thunk';
+import thunk, { ThunkDispatch } from 'redux-thunk';
 import MockAdapter from 'axios-mock-adapter';
 import axios from 'axios';
 
 import { someFn } from './thunk';
+import { AnyAction } from 'redux';
+
+export type RootState = any;
+type DispatchExts = ThunkDispatch<RootState, undefined, AnyAction>;
 
 const middleware = [thunk];
-const mockStore = configureStore(middleware);
+const mockStore = configureStore<RootState, DispatchExts>(middleware);
 const mock = new MockAdapter(axios);
 const store = mockStore({});
 
@@ -27,7 +31,7 @@ it('should login success', () => {
     { type: 'LOGIN_SUCCESS', user: { id: 1, email, password } },
   ];
 
-  return store.dispatch(someFn(email, password) as any).then(() => {
+  return store.dispatch(someFn(email, password)).then(() => {
     expect(store.getActions()).toEqual(expectedActions);
   });
 });
@@ -42,7 +46,7 @@ test('should login failure', () => {
     { type: 'LOGIN_FAILURE', user: null, error: 'Network Error' },
   ];
 
-  return store.dispatch(someFn(email, password) as any).then(() => {
+  return store.dispatch(someFn(email, password)).then(() => {
     expect(store.getActions()).toEqual(expectedActions);
   });
 });
