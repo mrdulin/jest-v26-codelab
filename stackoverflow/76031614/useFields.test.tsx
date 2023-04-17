@@ -1,10 +1,11 @@
 import { renderHook } from '@testing-library/react-hooks';
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from './store';
+import { setupStore } from './store';
 import { useFields } from './useFields';
 
 describe('useFields', () => {
+  const store = setupStore();
   const setup = () => {
     const { result } = renderHook(useFields, {
       wrapper: ({ children }) => <Provider store={store}>{children}</Provider>,
@@ -34,7 +35,7 @@ describe('useFields', () => {
     const getFields = setup()[0];
     const firstField = getFields[0];
     store.subscribe(() => {
-      expect(store.getState().regsitration.data).toEqual({
+      expect(store.getState().registrationForm.data).toEqual({
         email: {
           value: 'test@example.com',
           error: false,
