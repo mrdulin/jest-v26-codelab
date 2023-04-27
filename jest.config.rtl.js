@@ -5,5 +5,5 @@ module.exports = {
     'jest-extended',
     // '@testing-library/react/dont-cleanup-after-each'
   ],
-  setupFiles: ['./jest.setup.js'],
+  setupFiles: ['./jest.setup.js']
 };
