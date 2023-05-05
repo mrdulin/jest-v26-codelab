@@ -69,6 +69,7 @@
     "redis-mock": "^0.56.3",
     "redux-mock-store": "^1.5.4",
     "rewire": "^5.0.0",
+    "simple-git": "^3.18.0",
     "sinon": "^15.0.1",
     "supertest": "^6.0.1",
     "ts-jest": "^26.4.4",
