@@ -3,7 +3,7 @@ module.exports = {
   testEnvironment: 'jsdom',
   setupFilesAfterEnv: [
     'jest-extended',
+    './jest.setup.js'
     // '@testing-library/react/dont-cleanup-after-each'
   ],
-  setupFiles: ['./jest.setup.js']
 };

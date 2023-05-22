@@ -5,21 +5,10 @@ global.TextDecoder = TextDecoder;
 
 jest.setTimeout(5 * 1000);
 
-import 'isomorphic-fetch'
+import 'isomorphic-fetch';
+import matchMediaMock from 'match-media-mock';
 
-// import fetch, {
-//   Headers,
-//   Request,
-//   Response,
-// } from 'node-fetch'
-
-// if (!globalThis.fetch) {
-//   globalThis.fetch = fetch
-//   globalThis.Headers = Headers
-//   globalThis.Request = Request
-//   globalThis.Response = Response
-// }
-
+global.window.matchMedia = matchMediaMock.create();
 
 // global.SVGRect = {};
 
