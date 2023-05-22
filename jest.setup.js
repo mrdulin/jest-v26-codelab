@@ -5,6 +5,8 @@ global.TextDecoder = TextDecoder;
 
 jest.setTimeout(5 * 1000);
 
+import 'isomorphic-fetch'
+
 // global.SVGRect = {};
 
 // jest.useFakeTimers('modern');
