@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import React from 'react';
 import { createMemoryHistory } from 'history';
 import { SideBar } from './';
-import { Router } from 'react-router';
+import { Router } from 'react-router-dom';
 
 const createRouterWrapper = (history): React.ComponentType => ({ children }) => (
   <Router history={history}>{children}</Router>
