@@ -157,10 +157,5 @@
     "ws": "^8.9.0",
     "xmlhttprequest": "^1.8.0",
     "yargs": "^17.0.1"
-  },
-  "prettier": {
-    "singleQuote": true,
-    "printWidth": 120,
-    "tabWidth": 2
   }
 }
