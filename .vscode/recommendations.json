@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "codeium.codeium",
+    "dbaeumer.vscode-eslint",
+    "DavidAnson.vscode-markdownlint",
+    "rangav.vscode-thunder-client"
+  ]
+}
