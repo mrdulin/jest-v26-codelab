@@ -2,10 +2,6 @@
 
 Learning jestjs v26.x.x testing framework by examples
 
-## Environment
-
-`node`: `v14.16.0`
-
 ## How to run test only changed
 
 `--onlyChanged`

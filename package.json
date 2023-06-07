@@ -9,6 +9,9 @@
     "test:rtl:esbuild": "jest --config jest.config.esbuild.js",
     "test": "jest"
   },
+  "engines": {
+    "node": "^14.19.3"
+  },
   "author": "mrdulin <novaline.dulin@gmail.com>",
   "license": "MIT",
   "devDependencies": {
