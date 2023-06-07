@@ -1,5 +1,6 @@
 {
-  "recommendations": [
+  "remote.SSH.defaultExtensions": [
+    "esbenp.prettier-vscode",
     "codeium.codeium",
     "dbaeumer.vscode-eslint",
     "DavidAnson.vscode-markdownlint",
