@@ -5,5 +5,6 @@
     "dbaeumer.vscode-eslint",
     "DavidAnson.vscode-markdownlint",
     "rangav.vscode-thunder-client"
-  ]
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
 }
