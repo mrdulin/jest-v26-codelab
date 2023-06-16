@@ -1,15 +1,15 @@
 import { renderHook } from '@testing-library/react-hooks';
-import { QueryClient, QueryClientProvider } from 'react-query';
-import { useTest } from './test-hook';
-import * as testApi from './api';
 import React from 'react';
+import { QueryClient, QueryClientProvider } from 'react-query';
+import * as testApi from './api';
+import { useTest } from './test-hook';
 
 jest.mock('./api');
 
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      retry: false,
+      retry: false
     },
   },
 });
