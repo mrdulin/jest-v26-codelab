@@ -66,6 +66,7 @@
     "jest-environment-enzyme": "^7.1.2",
     "jest-enzyme": "^7.1.2",
     "jest-extended": "^0.11.5",
+    "jest-mock-extended": "^3.0.4",
     "match-media-mock": "^0.1.1",
     "mongodb-memory-server": "^8.12.2",
     "moxios": "^0.4.0",
