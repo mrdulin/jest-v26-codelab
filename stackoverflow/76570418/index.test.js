@@ -17,4 +17,10 @@ describe('76570418', () => {
 		expect(obj.items).toHaveLength(0);
 		expect(jest.isMockFunction(obj.search)).toBeTrue();
 	});
+	test('should pass 3', () => {
+		Object.assign(obj, { items: [1], a: 1 });
+		expect(obj.items).toHaveLength(1);
+		expect(obj.a).toBe(1);
+		expect(jest.isMockFunction(obj.search)).toBeTrue();
+	});
 });
