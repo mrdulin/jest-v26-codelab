@@ -5,7 +5,7 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Debug Jest Tests",
+			"name": "Debug single test(RTL)",
 			"type": "node",
 			"request": "launch",
 			"args": ["${file}"],
