@@ -1,5 +1,5 @@
 // https://github.com/jsdom/whatwg-url/issues/209
-import { TextEncoder, TextDecoder } from 'util';
+import { TextDecoder, TextEncoder } from 'util';
 global.TextEncoder = TextEncoder;
 global.TextDecoder = TextDecoder;
 
