@@ -1,12 +1,12 @@
 // https://github.com/jsdom/whatwg-url/issues/209
-// import { TextDecoder, TextEncoder } from 'util';
-// global.TextEncoder = TextEncoder;
-// global.TextDecoder = TextDecoder;
-
-jest.setTimeout(5 * 1000);
-
 import 'isomorphic-fetch';
 import matchMediaMock from 'match-media-mock';
+import { TextDecoder, TextEncoder } from 'util';
+
+global.TextEncoder = TextEncoder;
+global.TextDecoder = TextDecoder;
+
+jest.setTimeout(5 * 1000);
 
 // global.window.matchMedia = matchMediaMock.create();
 
