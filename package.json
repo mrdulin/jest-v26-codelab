@@ -89,7 +89,11 @@
   },
   "dependencies": {
     "@azure/identity": "^2.1.0",
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@google-cloud/firestore": "^4.10.1",
+    "@mui/icons-material": "^5.14.0",
+    "@mui/material": "^5.14.0",
     "@okta/jwt-verifier": "^3.0.1",
     "@reduxjs/toolkit": "^1.9.5",
     "@slack/web-api": "^6.8.1",
